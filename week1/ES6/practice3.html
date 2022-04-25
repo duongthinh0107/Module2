@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = [1,2,3,4,5,6]  ;
+    // [x,y,...rest] = arr;
+    // console.log(x);
+    // console.log(y);
+    // console.log(rest);
+    //rest tra lai 1 arr.
+    const names = ["alpha", "beta", "gamma", "delta"];
+    // [firstName,,thirdName,...rest] = names;
+    // console.log(firstName);
+    // console.log(thirdName);
+    // console.log(rest);
+    //swap
+    // [firstName,secondName] = names;
+    // [firstName,secondName] = [secondName,firstName];
+    // console.log(firstName);
+    // console.log(secondName);
+
+    // const marks = {
+    //     x : 21,
+    //     y : -34,
+    //     z : 47
+    // }
+    // const {x,y,z} = marks;
+    // console.log(x);
+    // console.log(y);
+    // console.log(z);
+
+    const marks = {
+        section1: {
+            alpha: 15,
+            beta: 16
+        },
+        section2: {
+            alpha: -31,
+            beta: 19
+        }
+    }
+
+    const {
+        section1: {alpha: alpha1, beta: beta1},
+        section2: {alpha: alpha2, beta: beta2}
+    } = marks;
+    console.log(alpha1)
+    console.log(beta1)
+    console.log(alpha2)
+    console.log(beta2)
+</script>
+</body>
+</html>
