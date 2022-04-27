@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var User_1 = require("./User");
+var UserManager_1 = require("./UserManager");
+var userProduct = new UserManager_1.UserManager();
+var user1 = new User_1.User('user1', 'user@gmail.com');
+var user2 = new User_1.User('user2', 'user2@gmail.com', 'admin');
+userProduct.addUser = user1;
+userProduct.addUser = user2;
+console.log(userProduct.getInfo);
+console.log(userProduct.isAdmin(user2));

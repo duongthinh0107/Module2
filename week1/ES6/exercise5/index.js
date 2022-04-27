@@ -1,15 +1,23 @@
-function replace(array, from, to) {
-
-    array.splice.apply(array, [from, to])
-
-
-}
+// function replace(array, from, to,elements) {
+//     for (let i = from; i <to ; i++) {
+//         array[i] =
+//     }
+//
+//
+// }
 
 
 let testArray = [1, 2, 100, 100, 6]
-let arr = [3, 4, 5];
+console.log(testArray[0,2])
+let a = [...testArray]
+a.push(1)
+console.log(testArray)
 
-replace(testArray, 2, 4)
-let newArr = [...testArray,...arr]
-console.log(newArr)
+console.log(a)
+// let arr = [3, 4, 5];
+//
+// replace(testArray, 2, 6,1)
+console.log(testArray)
+// let newArr = [...testArray,...arr]
+// console.log(newArr)
 

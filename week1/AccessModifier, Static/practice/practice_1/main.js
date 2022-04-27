@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Application_1 = require("./Application");
+console.log(Application_1.Application.count);
+var app1 = new Application_1.Application('App One');
+console.log(Application_1.Application.count);
+var app2 = new Application_1.Application('App Two');
+console.log(Application_1.Application.count);
+var app3 = new Application_1.Application('App Three');
+console.log(Application_1.Application.count);
+var app4 = new Application_1.Application('App Four');
+console.log(Application_1.Application.count);
